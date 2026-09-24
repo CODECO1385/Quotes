@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>New Glass Works</title>
+<style>
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;font-family:Arial,Helvetica,sans-serif;color:#1a1a1a;}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;
+    min-height:88vh;
+    background-image:url('Bg-01.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:40px 20px;
+  }
+  .hero-content{display:flex;flex-direction:column;align-items:center;}
+  .hero-logo{
+    width:190px;
+    height:190px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:22px;
+  }
+  .hero-tagline{
+    color:#fff;
+    font-size:20px;
+    font-weight:600;
+    margin:0 0 22px;
+    text-shadow:0 1px 4px rgba(0,0,0,0.6);
+  }
+  .cta-btn{
+    display:inline-block;
+    background:#3aa856;
+    color:#fff;
+    font-size:17px;
+    font-weight:600;
+    text-decoration:none;
+    padding:12px 26px;
+    border-radius:4px;
+    border:none;
+    cursor:pointer;
+  }
+  .cta-btn:hover{background:#33994c;}
+
+  /* ---------- QUOTE ---------- */
+  .quote-section{
+    padding:40px 20px 10px;
+    text-align:center;
+  }
+  .quote-text{
+    max-width:700px;
+    margin:0 auto;
+    font-style:italic;
+    font-size:16px;
+    line-height:1.6;
+    color:#333;
+  }
+
+  /* ---------- SERVICES ---------- */
+  .services-section{
+    padding:30px 20px 60px;
+    text-align:center;
+  }
+  .services-section h2{
+    font-size:28px;
+    letter-spacing:0.03em;
+    margin:0 0 14px;
+  }
+  .services-underline{
+    width:340px;
+    max-width:80%;
+    height:1px;
+    background:#1a1a1a;
+    margin:0 auto 40px;
+  }
+  .services-row{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+  }
+  .service-circle{
+    width:260px;
+    height:260px;
+    border-radius:50%;
+    object-fit:cover;
+  }
+
+  /* Bottom service images are for the desktop version only —
+     hidden on the mobile sizes used for the demo. */
+  @media (max-width:768px){
+    .services-section{display:none;}
+  }
+</style>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="hero-content">
+      <img class="hero-logo" src="IMG-01.png" alt="New Glass Works logo">
+      <p class="hero-tagline">Commercial and Residential, Service, Install, Repair</p>
+      <a class="cta-btn" href="estimate.html">Get a quote NOW</a>
+    </div>
+  </section>
+
+  <section class="quote-section">
+    <p class="quote-text">"Welcome where trust, responsibility, and quality come together to build lasting structures. We are committed to delivering exceptional results on time and exceeding your expectations."</p>
+  </section>
+
+  <section class="services-section">
+    <h2>OUR SERVICES</h2>
+    <div class="services-underline"></div>
+    <div class="services-row">
+      <img class="service-circle" src="IMG-02.jpg" alt="Service example 1">
+      <img class="service-circle" src="IMG-03.jpg" alt="Service example 2">
+    </div>
+  </section>
+
+</body>
+</html>
